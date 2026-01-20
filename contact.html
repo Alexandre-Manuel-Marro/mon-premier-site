@@ -5,49 +5,96 @@
     </head>
 
     <body>
-        <h1>Contactez-nous</h1>
-        
-        <form>
-            <label for="nom">Nom*</label>
-            <input required type="text" id="nom" name="nom"><br><br>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Aller à la page d'accueil</a>
+                    </li>
+                    <li>
+                        <a href="page-detail-1.html">Aller à la première page de détails</a>
+                    </li>
+                    <li>
+                        <a href="page-detail-2.html">Aller à la deuxième page de détails</a>
+                    </li>
+                    <li>
+                        <a href="page-detail-3.html">Aller à la troisième page de détails</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <label for="prenom">Prénom*</label>
-            <input required type="text" id="prenom" name="prenom"><br><br>
+        <main>
+            <h1>Contactez-nous</h1>
+            
+            
+            <form>
+                <section>
+                    <label for="nom">Nom*</label>
+                    <input required type="text" id="nom" name="nom"><br><br>
 
-            <label for="adresse">Adresse*</label>
-            <input required type="email" id="adresse" name="email"><br><br>
+                    <label for="prenom">Prénom*</label>
+                    <input required type="text" id="prenom" name="prenom"><br><br>
 
-            <label for="lieu">Lieu*</label>
-            <input required type="text" id="lieu" name="lieu"><br><br>
+                    <label for="adresse">Adresse*</label>
+                    <input required type="email" id="adresse" name="email"><br><br>
 
-            <label for="npa">N° postal (NPA)*</label>
-            <input required type="number" id="npa" name="codePostal"><br><br>
+                    <label for="lieu">Lieu*</label>
+                    <input required type="text" id="lieu" name="lieu"><br><br>
 
-            Votre commande<br><br>
-            <label>Barquette de fraise désirée :</label><br>
-            <input type="checkbox" name="fraise[]" value="garigeutte">La gariguette
-            <input type="checkbox" name="fraise[]" value="marigutte">La mariguette
-            <input type="checkbox" name="fraise[]" value="clery">La cléry<br><br>
+                    <label for="npa">N° postal (NPA)*</label>
+                    <input required type="number" id="npa" name="codePostal"><br><br>
+                </section>
 
-            <label>Quantité*</label><select required>
-                <option selected value="0">-- sélectionner --</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select><br><br>
+                <section>
+                Votre commande<br><br>
+                <label>Barquette de fraise désirée :</label><br>
+                <input type="checkbox" name="fraise[]" value="garigeutte">La gariguette
+                <input type="checkbox" name="fraise[]" value="marigutte">La mariguette
+                <input type="checkbox" name="fraise[]" value="clery">La cléry<br><br>
 
-            <label>Mode de paiement</label><br>
-            <input type="radio" value="Payement a la livraison" name="payer" checked>Payement à la livraison
-            <input type="radio" value="Carte bancaire" name="payer">Carte bancaire
-            <input type="radio" value="Paypal" name="payer">Paypal<br><br>
+                <label>Quantité*</label><select required>
+                    <option selected value="0">-- sélectionner --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br><br>
 
-            <label>Message</label>
-            <textarea></textarea><br><br>
+                <label>Mode de paiement</label><br>
+                <input type="radio" value="Payement a la livraison" name="payer" checked>Payement à la livraison
+                <input type="radio" value="Carte bancaire" name="payer">Carte bancaire
+                <input type="radio" value="Paypal" name="payer">Paypal<br><br>
+                </section>
 
-            <input type="checkbox" required> J'accepte les conditions générales*<br><br>
+                <section>
+                <label>Message</label>
+                <textarea></textarea><br><br>
 
-            <input type="submit" value="Envoyer">
-        </form>
+                <input type="checkbox" required> J'accepte les conditions générales*<br><br>
+
+                <input type="submit" value="Envoyer">
+                </section>
+            </form>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="contact.html">Aller à la page Contact</a>
+                    </li>
+                    <li>
+                        <a href="mentions-legales.html">Aller à la page Mentions Légales</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com">Aller sur Google</a>
+                    </li>
+                    <li>
+                        <a href="mailto:alexandre.marro@eduvaud.ch">Envoyer un e-mail à alexandre.marro@eduvaud.ch</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
