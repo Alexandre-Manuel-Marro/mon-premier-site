@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contacts</title>
+    </head>
+
+    <body>
+        <h1>Contactez-nous</h1>
+        
+        <form>
+            <label for="nom">Nom*</label>
+            <input required type="text" id="nom" name="nom"><br><br>
+
+            <label for="prenom">Prénom*</label>
+            <input required type="text" id="prenom" name="prenom"><br><br>
+
+            <label for="adresse">Adresse*</label>
+            <input required type="email" id="adresse" name="email"><br><br>
+
+            <label for="lieu">Lieu*</label>
+            <input required type="text" id="lieu" name="lieu"><br><br>
+
+            <label for="npa">N° postal (NPA)*</label>
+            <input required type="number" id="npa" name="codePostal"><br><br>
+
+            Votre commande<br><br>
+            <label>Barquette de fraise désirée :</label><br>
+            <input type="checkbox" name="fraise[]" value="garigeutte">La gariguette
+            <input type="checkbox" name="fraise[]" value="marigutte">La mariguette
+            <input type="checkbox" name="fraise[]" value="clery">La cléry<br><br>
+
+            <label>Quantité*</label><select required>
+                <option selected value="0">-- sélectionner --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br><br>
+
+            <label>Mode de paiement</label><br>
+            <input type="radio" value="Payement a la livraison" name="payer" checked>Payement à la livraison
+            <input type="radio" value="Carte bancaire" name="payer">Carte bancaire
+            <input type="radio" value="Paypal" name="payer">Paypal<br><br>
+
+            <label>Message</label>
+            <textarea></textarea><br><br>
+
+            <input type="checkbox" required> J'accepte les conditions générales*<br><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </body>
+</html>
