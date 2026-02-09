@@ -8,24 +8,94 @@
         <meta name="description" content="Exercice 1 sur le support de cours">
 
         <style>
-            .DescFraise{
-                height: 300px;
-                width: 700px;
-                border-radius: 20px;
-                background-color: crimson;
-                padding: 20px;
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
-            .VarFraise{
-                height: 60px;
-                width: 200px;
-                border-radius: 10px;
-                background-color: maroon;
+            header{
+                height: fit-content;
+                width: fit-content;
+                border: 1px solid black;
+                border-radius: 5px;
                 padding: 20px;
-                margin-bottom: 5px;
-                box-sizing: border-box;
-                box-shadow: 10px;
-                text-shadow: 10px ¦¦ white;
+                background-color: crimson;
+            }
+
+            footer {
+                height: fit-content;
+                width: fit-content;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 20px;
+                background-color: darkred;
+            }
+
+            nav{
+                width: auto;
+            }
+
+            .lien {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+            }
+
+            .lien a {
+                color: white;
+                padding: 5px 10px;
+                margin: 5px;
+                text-decoration: none;
+                border: 3px solid white;
+                border-radius: 8px;
+                background-color: slategray;
+                text-shadow: 0px 0px 5px white;
+            }
+
+            h1 {
+                height: 500px;
+                width: 760px;
+                color: white;
+                margin: 5px;
+                align-self: center;
+                border: 1px solid black;
+                border-radius: 8px;
+                background-color: red;
+                text-shadow: 2px 2px 1px black;
+                background-image: url(media/image/ingredient-saisonnier-les-fraises-walmart.jpg);
+            }
+
+            h2, h3 {
+                height: fit-content;
+                width: fit-content;
+                color: white;
+                padding: 5px 10px;
+                margin: 5px;
+                border: 1px solid black;
+                border-radius: 8px;
+                background-color: red;
+                text-shadow: 2px 2px 1px black;
+            }
+
+            .liste {
+                height: fit-content;
+                width: fit-content;
+                padding: 5px 10px;
+                margin: 5px;
+                border: 1px solid black;
+                display: flex;
+                list-style: none;
+            }
+
+            .fraise{
+                height: fit-content;
+                width: fit-content;
+                padding: 5px 10px;
+                margin: 5px;
+                border: 1px solid black;
             }
         </style>
     </head>
@@ -33,7 +103,7 @@
     <body>
         <header>
             <nav>
-                <ul>
+                <ul class="lien">
                     <li>
                         <a href="index.html">Aller à la page d'accueil</a>
                     </li>
@@ -54,17 +124,16 @@
             <h1>Bienvenue dans l'univers des fraises</h1>
 
             <p>Découvrez tout ce que vous avez toujours voulu savoir sur ce fruit rouge délicieux et irrésistible.</p>
-            <img width="700" alt="Bol de fraises" src="media/image/ingredient-saisonnier-les-fraises-walmart.jpg">
 
-            <section class="DescFraise">
+            <section>
                 <h2>Les différentes variétés de fraises</h2>
 
                 <p>Il existe de nombreuses variétés de fraises, parmi lesquelles :</p>
 
-                <ul>
-                    <li class="VarFraise">La <strong>gariguette</strong>, petite et allongée, très parfumée.</li>
-                    <li class="VarFraise">La <strong>mariguette</strong>, très sucrée et juteuse.</li>
-                    <li class="VarFraise">La <strong>cléry</strong>, très grosse et très sucrée.</li>
+                <ul class="liste">
+                    <li>La <strong>gariguette</strong>, petite et allongée, très parfumée.</li>
+                    <li>La <strong>mariguette</strong>, très sucrée et juteuse.</li>
+                    <li>La <strong>cléry</strong>, très grosse et très sucrée.</li>
                 </ul>
             </section>
 
@@ -73,17 +142,17 @@
 
                 <p>Voici les tailles selon les variétés:</p>
 
-                <ol>
-                    <li>
-                        La <strong>gariguette</strong>, mesure entre 2 et 3 cm de long.<br>
+                <ol class="liste">
+                    <li classe="fraise a">
+                        <strong>La Gariguette</strong> Mesure entre 2 et 3 cm de long.<br>
                         <img width="200" alt="Fraise gariguette" src="media/image/fraise-gariguette.jpg">
                     </li>
-                    <li>
-                        La <strong>mariguette</strong>, mesure entre 3 et 4 cm de long.<br>
+                    <li classe="fraise b">
+                        <strong>La Mariguette</strong> Mesure entre 3 et 4 cm de long.<br>
                         <img width="200" alt="Fraise mariguette" src="media/image/fraisier-mariguette.jpg">
                     </li>
-                    <li>
-                        La <strong>cléry</strong>, mesure entre 4 et 5 cm de long.<br>
+                    <li classe="fraise c">
+                        <strong>La Cléry</strong> Mesure entre 4 et 5 cm de long.<br>
                         <img width="200" alt="Fraise cléry" src="media/image/fraise-clery.jpg">
                     </li>
                 </ol>
@@ -92,7 +161,7 @@
 
         <footer>
             <nav>
-                <ul>
+                <ul class="lien">
                     <li>
                         <a href="contact.html">Aller à la page Contact</a>
                     </li>
