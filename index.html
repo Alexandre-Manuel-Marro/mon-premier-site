@@ -83,7 +83,7 @@
             .liste {
                 height: fit-content;
                 width: fit-content;
-                padding: 5px 10px;
+                padding: 10px 10px;
                 margin: 5px;
                 border: 1px solid black;
                 display: flex;
@@ -91,11 +91,33 @@
             }
 
             .fraise{
+                height: 200px;
+                width: 200px;
+                padding: 5px 10px;
+                margin: 5px;
+                border: 1px solid black;
+                background-size: 150%;
+            }
+
+            .fraise.a{
+                background-image: url(media/image/fraise-gariguette.jpg);
+            }
+
+            .fraise.b{
+                background-image: url(media/image/fraisier-mariguette.jpg);
+            }
+
+            .fraise.c{
+                background-image: url(media/image/fraise-clery.jpg);
+            }
+
+            .fraises{
                 height: fit-content;
                 width: fit-content;
                 padding: 5px 10px;
                 margin: 5px;
                 border: 1px solid black;
+                background-color: orangered;
             }
         </style>
     </head>
@@ -131,9 +153,9 @@
                 <p>Il existe de nombreuses variétés de fraises, parmi lesquelles :</p>
 
                 <ul class="liste">
-                    <li>La <strong>gariguette</strong>, petite et allongée, très parfumée.</li>
-                    <li>La <strong>mariguette</strong>, très sucrée et juteuse.</li>
-                    <li>La <strong>cléry</strong>, très grosse et très sucrée.</li>
+                    <li class="fraises">La <strong>gariguette</strong>, petite et allongée, très parfumée.</li>
+                    <li class="fraises">La <strong>mariguette</strong>, très sucrée et juteuse.</li>
+                    <li class="fraises">La <strong>cléry</strong>, très grosse et très sucrée.</li>
                 </ul>
             </section>
 
@@ -143,17 +165,14 @@
                 <p>Voici les tailles selon les variétés:</p>
 
                 <ol class="liste">
-                    <li classe="fraise a">
+                    <li class="fraise a">
                         <strong>La Gariguette</strong> Mesure entre 2 et 3 cm de long.<br>
-                        <img width="200" alt="Fraise gariguette" src="media/image/fraise-gariguette.jpg">
                     </li>
-                    <li classe="fraise b">
+                    <li class="fraise b">
                         <strong>La Mariguette</strong> Mesure entre 3 et 4 cm de long.<br>
-                        <img width="200" alt="Fraise mariguette" src="media/image/fraisier-mariguette.jpg">
                     </li>
-                    <li classe="fraise c">
+                    <li class="fraise c">
                         <strong>La Cléry</strong> Mesure entre 4 et 5 cm de long.<br>
-                        <img width="200" alt="Fraise cléry" src="media/image/fraise-clery.jpg">
                     </li>
                 </ol>
             </section>
