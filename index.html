@@ -32,10 +32,6 @@
                 background-color: darkred;
             }
 
-            nav{
-                width: auto;
-            }
-
             .lien {
                 display: flex;
                 list-style: none;
@@ -63,52 +59,36 @@
                 align-self: center;
                 border: 1px solid black;
                 border-radius: 8px;
-                background-color: red;
                 text-shadow: 2px 2px 1px black;
                 background-image: url(media/image/ingredient-saisonnier-les-fraises-walmart.jpg);
             }
-
-            h2, h3 {
-                height: fit-content;
-                width: fit-content;
-                color: white;
-                padding: 5px 10px;
-                margin: 5px;
-                border: 1px solid black;
-                border-radius: 8px;
-                background-color: red;
-                text-shadow: 2px 2px 1px black;
-            }
-
+            
             .liste {
                 height: fit-content;
                 width: fit-content;
                 padding: 10px 10px;
                 margin: 5px;
-                border: 1px solid black;
                 display: flex;
                 list-style: none;
             }
 
-            .fraise{
-                height: 200px;
-                width: 200px;
-                padding: 5px 10px;
+            .variete {
+                padding: 10px 10px;
                 margin: 5px;
-                border: 1px solid black;
-                background-size: 150%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
-            .fraise.a{
-                background-image: url(media/image/fraise-gariguette.jpg);
+            .variete.desc {
+                background-color: #af3836;
+                color: white;
+                border-radius: 8px;
             }
 
-            .fraise.b{
-                background-image: url(media/image/fraisier-mariguette.jpg);
-            }
-
-            .fraise.c{
-                background-image: url(media/image/fraise-clery.jpg);
+            .variete.img {
+                border: 3px solid darkred;
+                border-radius: 8px;
             }
 
             .fraises{
@@ -117,7 +97,27 @@
                 padding: 5px 10px;
                 margin: 5px;
                 border: 1px solid black;
-                background-color: orangered;
+                background-color: #6a3c3a;
+                display: flex;
+            }
+
+            .nom {
+                height: 200px;
+                width: 200px;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: rgba(150, 150, 150, 0.425);
+            }
+
+            .fraise {
+                font-size: 15px;
+                background-color: #d88080;
+                position: absolute;
+            }
+
+            img {
+                height: 200px;
+                width: 200px;
             }
         </style>
     </head>
@@ -147,7 +147,7 @@
 
             <p>Découvrez tout ce que vous avez toujours voulu savoir sur ce fruit rouge délicieux et irrésistible.</p>
 
-            <section>
+            <section class="variete desc">
                 <h2>Les différentes variétés de fraises</h2>
 
                 <p>Il existe de nombreuses variétés de fraises, parmi lesquelles :</p>
@@ -159,22 +159,35 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="variete img">
                 <h3>Les taille des fraises</h3>
 
                 <p>Voici les tailles selon les variétés:</p>
-
-                <ol class="liste">
-                    <li class="fraise a">
-                        <strong>La Gariguette</strong> Mesure entre 2 et 3 cm de long.<br>
-                    </li>
-                    <li class="fraise b">
-                        <strong>La Mariguette</strong> Mesure entre 3 et 4 cm de long.<br>
-                    </li>
-                    <li class="fraise c">
-                        <strong>La Cléry</strong> Mesure entre 4 et 5 cm de long.<br>
-                    </li>
-                </ol>
+                
+                <div class="taille">
+                    <strong class="nom">La Gariguette</strong> 
+                    <div class="fraise">
+                        Mesure entre 2 et 3 cm de long.
+                        <img alt="gariguette" src="media/image/fraise-gariguette.jpg">
+                    </div>
+                </div>
+                   
+                <div class="taille">
+                    <strong class="nom">La Mariguette</strong> 
+                    <div class="fraise">
+                        Mesure entre 3 et 4 cm de long.
+                        <img alt="mariguette" src="media/image/fraisier-mariguette.jpg">
+                    </div>
+                </div>
+                  
+                <div class="taille">
+                    <strong class="nom">La Cléry</strong> 
+                    <div class="fraise">
+                        Mesure entre 4 et 5 cm de long.
+                        <img alt="cléry" src="media/image/fraise-clery.jpg">
+                    </div>
+                </div>
+                
             </section>
         </main>
 
