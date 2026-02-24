@@ -89,6 +89,14 @@
             .variete.img {
                 border: 3px solid darkred;
                 border-radius: 8px;
+                padding-bottom: 20px;
+            }
+            .variete.img > h3 {
+                margin: 0;
+                margin-top: 5px;
+            }
+            .variete.img > p {
+                margin: 20px 0;
             }
 
             .fraises{
@@ -113,11 +121,42 @@
                 font-size: 15px;
                 background-color: #d88080;
                 position: absolute;
+                display: flex;
             }
 
             img {
                 height: 200px;
                 width: 200px;
+            }
+
+            .boxes-3 {
+                display: flex;
+                flex-direction: row;
+                gap: 40px
+            }
+            .boxes-3 > div {
+                position: relative;
+                border: 1px solid rgba(150, 150, 150, 0.75);
+                border-radius: 5px;
+                width: 220px;
+            }
+
+            .boxes-3 > div > h4 {
+                position: absolute;
+                top :0;
+                left: 0;
+                margin: 0;
+                padding: 5px;
+                background-color: rgba(150, 150, 150, 0.75);
+                border-bottom-right-radius: 5px;
+            }
+            .boxes-3 img {
+                width: 100%;
+            }
+
+            .boxes-3 p {
+                margin: 0;
+                padding: 5px 10px;
             }
         </style>
     </head>
@@ -164,27 +203,29 @@
 
                 <p>Voici les tailles selon les variétés:</p>
                 
-                <div class="taille">
-                    <strong class="nom">La Gariguette</strong> 
-                    <div class="fraise">
-                        Mesure entre 2 et 3 cm de long.
-                        <img alt="gariguette" src="media/image/fraise-gariguette.jpg">
+                <div class="boxes-3">
+                    <div>
+                        <h4>La Gariguette</h4> 
+                        <div>
+                            <img alt="gariguette" src="media/image/fraise-gariguette.jpg">
+                            <p>Mesure entre 2 et 3 cm de long.</p>
+                        </div>
                     </div>
-                </div>
-                   
-                <div class="taille">
-                    <strong class="nom">La Mariguette</strong> 
-                    <div class="fraise">
-                        Mesure entre 3 et 4 cm de long.
-                        <img alt="mariguette" src="media/image/fraisier-mariguette.jpg">
+                    
+                    <div>
+                        <h4>La Mariguette</h4> 
+                        <div>
+                            <img alt="mariguette" src="media/image/fraisier-mariguette.jpg">
+                            <p>Mesure entre 3 et 4 cm de long.</p>
+                        </div>
                     </div>
-                </div>
-                  
-                <div class="taille">
-                    <strong class="nom">La Cléry</strong> 
-                    <div class="fraise">
-                        Mesure entre 4 et 5 cm de long.
-                        <img alt="cléry" src="media/image/fraise-clery.jpg">
+                    
+                    <div>
+                        <h4>La Cléry</h4> 
+                        <div>
+                            <img alt="cléry" src="media/image/fraise-clery.jpg">
+                            <p>Mesure entre 4 et 5 cm de long.</p>
+                        </div>
                     </div>
                 </div>
                 
